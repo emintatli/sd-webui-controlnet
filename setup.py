@@ -2,9 +2,10 @@ import launch
 import os
 import pkg_resources
 import sys
-from launch import run
 sys.append(os.getcwd())
 req_file = os.path.join(os.path.dirname(os.path.realpath(__file__)), "requirements.txt")
+from launch import run
+
 
 with open(req_file) as file:
     for package in file:
